@@ -5,18 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Nafhan Ilvin - Web Developer Portfolio">
     <title>Nafhan Ilvin | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=25">
+    <link rel="icon" href="data:,">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <a href="#home">Nafhan Ilvin</a>
+                <a href="#home">
+                    <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="8" fill="url(#gradient1)"/>
+                        <path d="M10 22V10L22 22V10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="gradient1" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#6366f1"/>
+                                <stop offset="1" stop-color="#8b5cf6"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="logo-text">AboutMe</span>
+                </a>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -31,14 +45,81 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <div class="particles">
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+            </div>
+            <div class="geometric-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
         <div class="hero-content">
-            <h1 class="hero-title">Hi, I'm <span class="highlight">Nafhan Ilvin</span></h1>
-            <p class="hero-subtitle">Web Developer | Designer | Creator</p>
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-text">Available for Projects</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Hi, I'm</span>
+                <span class="highlight-wrapper">
+                    <span class="highlight">Nafhan Ilvin</span>
+                    <svg class="highlight-underline" viewBox="0 0 200 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 5 Q100 10, 195 5" stroke="#fbbf24" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    </svg>
+                </span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="typing-text">Web Developer | Designer | Creator</span>
+            </p>
             <p class="hero-description">Designing intuitive, user-focused digital experiences with a balance of clarity, creativity, and functionality</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Contact Me</span>
+                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 8L10.89 13.26C11.5333 13.6778 12.4667 13.6778 13.11 13.26L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
             </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">2+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Dedicated</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Support</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll Down</span>
+            <svg class="scroll-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </div>
     </section>
 
@@ -54,6 +135,105 @@
                 </div>
                 <div class="about-image">
                     <img src="images/myphoto1.jpg" alt="Nafhan Ilvin" class="profile-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">My academic journey and certifications</p>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Higher Diploma in Software Engineering</h3>
+                            <span class="status-badge pending">Pending</span>
+                        </div>
+                        <p class="institution">National Institute of Business Management</p>
+                        <div class="timeline-details">
+                            <span class="timeline-icon">📚</span>
+                            <span>Advanced software development and engineering principles</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Diploma in Software Engineering</h3>
+                            <span class="status-badge pending">Pending</span>
+                        </div>
+                        <p class="institution">National Institute of Business Management</p>
+                        <div class="timeline-details">
+                            <span class="timeline-icon">💻</span>
+                            <span>Software development, databases, and system design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Certificate in Computer Science</h3>
+                            <span class="status-badge completed">Completed</span>
+                        </div>
+                        <p class="institution">National Institute of Business Management</p>
+                        <div class="timeline-details">
+                            <span class="timeline-icon">🖥️</span>
+                            <span>Foundation in programming and computer systems</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Advanced Levels</h3>
+                            <span class="status-badge pending">Pending</span>
+                        </div>
+                        <p class="institution">WMMVB</p>
+                        <div class="timeline-details">
+                            <span class="timeline-icon">📖</span>
+                            <span>GCE Advanced Level education</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Ordinary Levels</h3>
+                            <span class="status-badge completed">Completed</span>
+                        </div>
+                        <p class="institution">Sussex College Galle</p>
+                        <div class="timeline-details">
+                            <span class="timeline-icon">📝</span>
+                            <span>GCE Ordinary Level education</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Cambridge English</h3>
+                            <span class="status-badge completed">Completed</span>
+                        </div>
+                        <p class="institution">Sussex College Galle</p>
+                        <div class="timeline-details">
+                            <span class="timeline-icon">🗣️</span>
+                            <span>English language proficiency certification</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -115,55 +295,35 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="image-placeholder">Project 1</div>
+                        <img src="images/RADhelmet.png" alt="SMART HELMET for robotics">
                     </div>
                     <div class="project-info">
-                        <h3>E-Commerce Website</h3>
-                        <p>A full-stack e-commerce platform with user authentication, product management, and payment integration.</p>
+                        <h3>SMART HELMET for robotics</h3>
+                        <p>A full stack smart helmet including accident detection and many more functions.</p>
                         <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
+                            <span class="tag">ArduinoIDE</span>
+                            <span class="tag">Proteus</span>
+                            <span class="tag">Hardware</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link" onclick="openProjectModal(event)">Explore More</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="image-placeholder">Project 2</div>
+                        <img src="images/iothelmet22.jpg" alt="SMART HELMET with IOT">
                     </div>
                     <div class="project-info">
-                        <h3>Task Management App</h3>
-                        <p>A responsive task management application with drag-and-drop functionality and real-time updates.</p>
+                        <h3>SMART HELMET with IOT</h3>
+                        <p>Advanced smart helmet along with accident detection, other functions and Mobile Application.</p>
                         <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">CSS</span>
+                            <span class="tag">ArduinoIDE</span>
+                            <span class="tag">Flutter</span>
                             <span class="tag">Firebase</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">Project 3</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Weather Dashboard</h3>
-                        <p>A beautiful weather application that provides real-time weather data and forecasts for any location.</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">API</span>
-                            <span class="tag">CSS3</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link" onclick="openProjectModal2(event)">Explore More</a>
                         </div>
                     </div>
                 </div>
@@ -183,42 +343,66 @@
                             <span class="contact-icon">📧</span>
                             <div>
                                 <h4>Email</h4>
-                                <p>your.email@example.com</p>
+                                <p>nafhanilvin2004@gmail.com</p>
                             </div>
                         </div>
                         <div class="contact-method">
                             <span class="contact-icon">📱</span>
                             <div>
                                 <h4>Phone</h4>
-                                <p>+1 (123) 456-7890</p>
+                                <p>0764242126</p>
                             </div>
                         </div>
                         <div class="contact-method">
                             <span class="contact-icon">📍</span>
                             <div>
                                 <h4>Location</h4>
-                                <p>Your City, Country</p>
+                                <p>Ginthota, Galle</p>
                             </div>
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="#" class="social-link" aria-label="GitHub">GitHub</a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
-                        <a href="#" class="social-link" aria-label="Twitter">Twitter</a>
+                        <a href="https://github.com/Nafhanilvin" class="social-link" aria-label="GitHub" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/nafhan-ilvin-bb886b355" class="social-link" aria-label="LinkedIn" target="_blank">LinkedIn</a>
+                        <a href="https://www.instagram.com/naf_ilvinofficial_/" class="social-link" aria-label="Instagram" target="_blank">Instagram</a>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <div class="contact-form-container">
+                    <h3>Send me a message</h3>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    
+                    <div class="contact-divider">
+                        <span>OR</span>
                     </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    
+                    <div class="contact-quick-actions">
+                        <a href="mailto:nafhanilvin2004@gmail.com" class="contact-action-btn email-btn">
+                            <span class="action-icon">📧</span>
+                            <div>
+                                <strong>Email Me</strong>
+                                <p>nafhanilvin2004@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="tel:0764242126" class="contact-action-btn phone-btn">
+                            <span class="action-icon">📱</span>
+                            <div>
+                                <strong>Call Me</strong>
+                                <p>0764242126</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                </div>
             </div>
         </div>
     </section>
@@ -226,9 +410,207 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Nafhan Ilvin. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nafhan Ilvin</h3>
+                    <p>Designing intuitive, user-focused digital experiences with a balance of clarity, creativity, and functionality.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>📧 nafhanilvin2004@gmail.com</li>
+                        <li>📱 0764242126</li>
+                        <li>📍 Ginthota, Galle</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/nafhan-ilvin-bb886b355" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://github.com/Nafhanilvin" target="_blank" aria-label="GitHub" title="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/naf_ilvinofficial_/" target="_blank" aria-label="Instagram" title="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://web.facebook.com/profile.php?id=61560048376197" target="_blank" aria-label="Facebook" title="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nafhan Ilvin. All rights reserved.</p>
+                <p class="footer-made">Made with ❤️ by Nafhan Ilvin</p>
+            </div>
         </div>
     </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProjectModal()">&times;</span>
+            <h2>SMART HELMET for robotics</h2>
+            
+            <!-- Modal Tabs -->
+            <div class="modal-tabs">
+                <button class="tab-btn active" onclick="openTab(event, 'info')">Info</button>
+                <button class="tab-btn" onclick="openTab(event, 'photos')">Photos</button>
+                <button class="tab-btn" onclick="openTab(event, 'videos')">Videos</button>
+                <button class="tab-btn" onclick="openTab(event, 'documents')">Documents</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div id="info" class="tab-content active">
+                <h3>Project Information</h3>
+                <p><strong>Description:</strong> A full stack smart helmet including accident detection and many more functions.</p>
+                <p><strong>Technologies:</strong> ArduinoIDE, Proteus, Hardware Components</p>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Accident detection system</li>
+                    <li>Real-time monitoring</li>
+                    <li>Emergency alert system</li>
+                    <li>GPS tracking integration</li>
+                </ul>
+                <p><strong>Status:</strong> Completed</p>
+                <p><strong>Duration:</strong> 3 months</p>
+            </div>
+
+            <div id="photos" class="tab-content">
+                <h3>Project Photos</h3>
+                <div class="modal-gallery">
+                    <img src="images/RADhelmet.png" alt="Smart Helmet">
+                    <img src="images/RADme.JPG" alt="Smart Helmet Photo 2">
+                    <!-- Add more photos here -->
+                    <p class="upload-hint">Add more project photos to the images folder</p>
+                </div>
+            </div>
+
+            <div id="videos" class="tab-content">
+                <h3>Project Videos</h3>
+                <div class="modal-videos">
+                    <video controls width="100%" style="max-width: 560px; border-radius: 0.5rem;">
+                        <source src="images/RADhelmetvid.mov" type="video/quicktime">
+                        <source src="images/RADhelmetvid.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p style="margin-top: 1rem; color: var(--text-light);">Smart Helmet Demo Video</p>
+                </div>
+            </div>
+
+            <div id="documents" class="tab-content">
+                <h3>Project Documents</h3>
+                <div class="modal-documents">
+                    <ul>
+                        <li><a href="#" download>Project Report.pdf</a></li>
+                        <li><a href="#" download>Technical Documentation.pdf</a></li>
+                        <li><a href="#" download>Circuit Diagram.pdf</a></li>
+                        <li><a href="#" download>User Manual.pdf</a></li>
+                    </ul>
+                    <p class="upload-hint">Add your project documents to link them here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 2 Modal -->
+    <div id="projectModal2" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProjectModal2()">&times;</span>
+            <h2>SMART HELMET with IOT</h2>
+            
+            <!-- Modal Tabs -->
+            <div class="modal-tabs">
+                <button class="tab-btn active" onclick="openTab2(event, 'info2')">Info</button>
+                <button class="tab-btn" onclick="openTab2(event, 'photos2')">Photos</button>
+                <button class="tab-btn" onclick="openTab2(event, 'videos2')">Videos</button>
+                <button class="tab-btn" onclick="openTab2(event, 'documents2')">Documents</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div id="info2" class="tab-content active">
+                <h3>Project Information</h3>
+                <p><strong>Description:</strong> Advanced smart helmet along with accident detection, other functions and Mobile Application.</p>
+                <p><strong>Technologies:</strong> ArduinoIDE, Flutter, Firebase</p>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>IOT-enabled connectivity</li>
+                    <li>Accident detection system</li>
+                    <li>Mobile app integration (Flutter)</li>
+                    <li>Real-time data sync with Firebase</li>
+                    <li>Advanced safety features</li>
+                </ul>
+                <p><strong>Status:</strong> Completed</p>
+            </div>
+
+            <div id="photos2" class="tab-content">
+                <h3>Project Photos</h3>
+                <div class="modal-gallery">
+                    <img src="images/iothelmet22.jpg" alt="Smart Helmet with IOT">
+                    <img src="images/iothelmet11.png" alt="IOT Helmet Photo 2">
+                    <p class="upload-hint">Add more project photos to the images folder</p>
+                </div>
+            </div>
+
+            <div id="videos2" class="tab-content">
+                <h3>Project Videos</h3>
+                <div class="modal-videos">
+                    <p>Upload your project demo videos here</p>
+                </div>
+            </div>
+
+            <div id="documents2" class="tab-content">
+                <h3>Project Documents</h3>
+                <div class="modal-documents">
+                    <ul>
+                        <li><a href="#" download>Project Report.pdf</a></li>
+                        <li><a href="#" download>Technical Documentation.pdf</a></li>
+                        <li><a href="#" download>App Screenshots.pdf</a></li>
+                    </ul>
+                    <p class="upload-hint">Add your project documents to link them here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Chatbot -->
+    <div id="chatbot-container">
+        <div id="chatbot-button" onclick="toggleChatbot()">
+            <span class="chat-icon">💬</span>
+        </div>
+        
+        <div id="chatbot-window" class="chatbot-hidden">
+            <div class="chatbot-header">
+                <h3>Chat with me</h3>
+                <button onclick="toggleChatbot()" class="chatbot-close">&times;</button>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="bot-message">
+                    <p>Hi! I'm Nafhan's assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chatbot-input-area">
+                <input type="text" id="chatbot-input" placeholder="Type your message..." onkeypress="handleChatKeypress(event)">
+                <button onclick="sendMessage()" class="chatbot-send">Send</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
